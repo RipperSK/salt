@@ -1,2 +1,2 @@
-./rundeck
-./users/ripper.sls
+rundeck
+users/ripper.sls
