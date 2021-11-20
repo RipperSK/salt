@@ -1,7 +1,7 @@
 default-packages:
   pkg.latest:
     - pkgs:
-      - vim
+      - bc
       - net-tools
       - cifs-utils
       - tmux
@@ -26,3 +26,4 @@ default-packages:
       - bash-completion
       - nload
       - nfs-common
+      - mutt

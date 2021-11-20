@@ -8,7 +8,7 @@ ripper:
     - home: /home/ripper
     - uid: 1000
     - gid: 1000
-    - password: <redacted>
+    - password: $6$NYpIMdhYp4OQW7Lt$heKDu24J7n1Rg7vA3oui6PG4TLRzOoPDIwlw/8BlmVxC.96N571fGWAJyFrlTTJbG85K/6Ruh4250kmuRSHM61
     - groups:
       - ripper
 /home/ripper/.ssh:

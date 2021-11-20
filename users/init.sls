@@ -1,3 +1,2 @@
-base:
-  '*':
-    - ripper
+include:
+  - users.ripper

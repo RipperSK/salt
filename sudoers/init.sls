@@ -1,4 +1,4 @@
-ripper sudoers:
+ripper-sudoers:
   file.managed:
     - name: /etc/sudoers.d/ripper
     - user: root
