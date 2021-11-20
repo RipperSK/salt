@@ -1,0 +1,28 @@
+default-packages:
+  pkg.latest:
+    - pkgs:
+      - vim
+      - net-tools
+      - cifs-utils
+      - tmux
+      - screen
+      - psmisc
+      - strace
+      - telnet
+      - tcpdump
+      - lsof
+      - curl
+      - wget
+      - rsyslog
+      - xauth
+      - sudo
+      - openssl
+      - rsync
+      - iotop
+      - mlocate
+      - dnsutils
+      - netcat-traditional
+      - htop
+      - bash-completion
+      - nload
+      - nfs-common
