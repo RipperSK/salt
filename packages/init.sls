@@ -1,33 +1,32 @@
 default-packages:
   pkg.latest:
     - pkgs:
-      - bc
-      - net-tools
-      - cifs-utils
-      - tmux
-      - screen
-      - psmisc
-      - strace
-      - telnet
-      - tcpdump
-      - nmap
-      - lsof
-      - curl
-      - wget
-      - rsyslog
-      - xauth
-      - sudo
-      - openssl
-      - rsync
-      - iotop
-      - mlocate
-      - dnsutils
-      - netcat-traditional
-      - htop
       - bash-completion
-      - nload
-      - nfs-common
-      - mutt
-      - vim
+      - bc
+      - cifs-utils
+      - curl
+      - dnsutils
       - git
       - git-man
+      - htop
+      - iotop
+      - locate
+      - lsof
+      - mutt
+      - netcat-traditional
+      - net-tools
+      - nfs-common
+      - nload
+      - nmap
+      - openssl
+      - psmisc
+      - rsync
+      - rsyslog
+      - screen
+      - strace
+      - sudo
+      - tcpdump
+      - telnet
+      - tmux
+      - vim
+      - wget
