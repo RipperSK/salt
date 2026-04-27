@@ -20,7 +20,5 @@ grep -A 3 "^Summary for " "$LOGFILE" | awk '
     failed = $2
     if (failed > 0) {
         print "FAIL [" minion "] - Failed states: " failed
-    } else {
-        print "OK   [" minion "]"
     }
 }'
