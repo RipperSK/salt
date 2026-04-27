@@ -1,3 +1,7 @@
+sudo-package:
+  pkg.latest:
+    - pkgs:
+      - sudo
 ripper-sudoers:
   file.managed:
     - name: /etc/sudoers.d/ripper

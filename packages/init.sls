@@ -10,6 +10,7 @@ default-packages:
       - strace
       - telnet
       - tcpdump
+      - nmap
       - lsof
       - curl
       - wget
@@ -27,3 +28,6 @@ default-packages:
       - nload
       - nfs-common
       - mutt
+      - vim
+      - git
+      - git-man

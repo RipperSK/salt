@@ -11,7 +11,7 @@ add_docker_key:
     - name: curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 docker_repo:
   pkgrepo.managed:
-    - name: deb [arch=amd64] https://download.docker.com/linux/debian buster stable
+    - name: deb [arch=amd64] https://download.docker.com/linux/debian bullseye stable
     - file: /etc/apt/sources.list.d/docker.list
     - refresh_db: true
 refresh_apt:

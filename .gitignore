@@ -1,2 +1,3 @@
-rundeck
-users/ripper1.sls
+*.grains
+*.ini
+.*.swp
