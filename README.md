@@ -57,22 +57,36 @@ salt/
 ## Technology Stack
 
 - **SaltStack**: Infrastructure automation and configuration management
+- **Chocolately**: Installed via script or [guide](https://chocolatey.org/install)
 - **Shell**: Bash scripts for utility and orchestration
-- **Supported Platforms**: Linux (multi-distribution) and Windows
+- **Supported Platforms**:
+  - Linux (tested on Debian and Alma Linux)
+  - Windows (tested on win10 and win11)
 - **License**: MIT
 
 ## Getting Started
 
 ### Prerequisites
 - SaltStack Master and Minions installed and configured
-- SSH or other connectivity between Master and Minions
+- ZeroMQ connectivity between Master and Minions allowed
+  - TCP ports 4505 and 4506 opened on Master
 - Minions must be properly registered with the Master
 
 ### Basic Usage
 
-#### Apply all states to minions:
+#### Apply all states to all minions:
 ```bash
 salt '*' state.apply
+```
+
+#### Check connectivity of all minions:
+```bash
+salt '*' test.ping
+```
+
+#### Issue a specific command to Linux minions:
+```bash
+salt -G 'kernel:Linux' cmd.run 'grep -i pretty /etc/os-release'
 ```
 
 #### Apply specific state to Windows minions:
@@ -80,7 +94,7 @@ salt '*' state.apply
 salt -G 'os:Windows' state.apply win-packages
 ```
 
-#### Run OS updates across Linux infrastructure:
+#### Run OS updates across whole Linux infrastructure:
 ```bash
 ./salt-os-upgrade.sh
 ```
@@ -105,9 +119,10 @@ Target configurations by grain matching (e.g., `G@os:Windows` for Windows system
 ## Best Practices
 
 1. **Test State Changes**: Use Salt's test functionality before applying state changes
-2. **Logging**: All orchestration scripts include comprehensive logging with timestamps
-3. **Dynamic Inventory**: Scripts automatically discover online minions rather than using static lists
-4. **Cross-Platform**: Distinct states for Linux and Windows with appropriate grain-based targeting
+1. **Lint yaml syntax**: Via yamllint cli tool
+1. **Logging**: All orchestration scripts include comprehensive logging with timestamps
+1. **Dynamic Inventory**: Scripts automatically discover online minions rather than using static lists
+1. **Cross-Platform**: Distinct states for Linux and Windows with appropriate grain-based targeting
 
 ## License
 
@@ -115,4 +130,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-RipperSK
+[RipperSK](spiak.roman@gmail.com)
