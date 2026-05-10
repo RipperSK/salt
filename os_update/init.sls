@@ -7,6 +7,3 @@ refresh-pkgs:
   cmd.run:
     - name: dnf -y update
 {%- endif %}
-update_pkg:
-  pkg.uptodate:
-    - refresh : True

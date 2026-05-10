@@ -1,39 +1,23 @@
-chocolatey-bootstrap:
-  chocolatey.bootstrapped:
-    - force: false
-
 libreoffice:
   chocolatey.installed:
     - name: libreoffice
-    - require:
-      - chocolatey: chocolatey-bootstrap
 
 totalcommander:
   chocolatey.installed:
     - name: totalcommander
-    - require:
-      - chocolatey: chocolatey-bootstrap
 
 irfanview:
   chocolatey.installed:
     - name: irfanview
-    - require:
-      - chocolatey: chocolatey-bootstrap
 
 7zip:
   chocolatey.installed:
     - name: 7zip
-    - require:
-      - chocolatey: chocolatey-bootstrap
 
 vlc:
   chocolatey.installed:
     - name: vlc
-    - require:
-      - chocolatey: chocolatey-bootstrap
 
 ccleaner:
   chocolatey.installed:
     - name: ccleaner
-    - require:
-      - chocolatey: chocolatey-bootstrap
